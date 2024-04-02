@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import Usestate from './Components/Usestate'
+import Event from './Components/Event'
+import UseEffeect from './Components/UseEffeect'
+import UseEffectAPI from './Components/UseEffectAPI'
+import UseRef from './Components/UseRef'
+import UserContextProvider from './Components/UseContext/UserContextProvider'
+import Login from './Components/UseContext/Login'
+import Profile from './Components/UseContext/Profile'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+<UserContextProvider>
+
+  <h1>hello user pls login the page</h1>
+        <Login/>
+        <Profile/>
+</UserContextProvider>
+
+    // <div>
+    //  {/* <Usestate/> */}
+    //  {/* <Event/> */}
+    //  {/* <UseEffeect/> */}
+    //  {/* <UseEffectAPI/> */}
+    //  {/* <UseRef/> */}
+    // </div>
+  )
 }
 
-export default App;
+export default App

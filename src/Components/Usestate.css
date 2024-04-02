@@ -1,0 +1,33 @@
+/* button{
+  width:100%;
+  padding: 15px 20px;
+  background: rgb(158, 96, 158);
+  color: white;
+  border: 2px solid purple;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  
+}
+div{
+ 
+  height: 100%;
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ul{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 10px;
+
+  text-align: center;
+  justify-content: center;
+} */
